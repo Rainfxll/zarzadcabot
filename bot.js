@@ -72,5 +72,13 @@ client.on("guildMemberAdd", function(member){
     member.guild.channels.find("name", "🌠┃powitalnia").send("(**SYSTEM**) Powitajmy użytkownika o nazwie @"  +  member.user.username )
 });
 
-// Reaction role
+
+try {
+    let link = await client.generateInvite(["ADMINISTRATOR"]);
+    console.log(link);
+    } catch(e) {
+        console.log(e.stack);
+        }
+});
+
 client.login(process.env.token);
