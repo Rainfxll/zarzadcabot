@@ -6,7 +6,7 @@ const config = require("./config.json");
 
 client.on("ready", () => {
     console.log(`(SYSTEM) Zarządca Jest gotowy do pracy`);
-    client.user.setActivity(`Użytkownicy ${bot.users.size} | v0.1`);
+    client.user.setActivity(`Użytkownicy ${client.users.size} | v0.1`);
 
 })
 
