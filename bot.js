@@ -74,7 +74,7 @@ client.on("guildMemberAdd", function(member){
 
 
 try {
-    let link = await client.generateInvite(["ADMINISTRATOR"]);
+    let link = client.generateInvite(["ADMINISTRATOR"]);
     console.log(link);
     } catch(e) {
         console.log(e.stack);
