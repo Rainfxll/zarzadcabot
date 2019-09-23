@@ -6,9 +6,9 @@ const config = require("./config.json");
 
 client.on("ready", () => {
     console.log(`(SYSTEM) Zarządca Jest gotowy do pracy`);
-    client.user.setActivity(`Użytkownicy ${client.users.size} | v0.1`);\
+    client.user.setActivity(`Użytkownicy ${client.users.size} | v0.1`);
     
-    client.channels.get("625757418957045764").setName(`📑┃Serwery: ${client.guilds.size}/2`)
+    client.channels.get("625757418957045764").setName(`📑┃Serwery: ${client.guilds.size}`)
 
 })
 
