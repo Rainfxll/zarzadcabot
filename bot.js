@@ -67,22 +67,6 @@ client.on ("guildMemberRemove", member => {
 
 client.on("guildMemberAdd", function(member){
     member.guild.channels.find("name", "🌠┃powitalnia").send("(**SYSTEM**) Powitajmy użytkownika o nazwie @"  +  member.user.username )
-static void UpdatePresence()
-{
-    DiscordRichPresence discordPresence;
-    memset(&discordPresence, 0, sizeof(discordPresence));
-    discordPresence.state = "Kubciu";
-    discordPresence.details = "Twórca:";
-    discordPresence.endTimestamp = 1507665886;
-    discordPresence.largeImageText = "Numbani";
-    discordPresence.smallImageText = "Rogue - Level 100";
-    discordPresence.partyId = "ae488379-351d-4a4f-ad32-2b9b01c91657";
-    discordPresence.partySize = 1;
-    discordPresence.partyMax = 5;
-    discordPresence.spectateSecret = "0";
-    Discord_UpdatePresence(&discordPresence);
-}
-    
 });
 
 // Reaction role
