@@ -79,6 +79,5 @@ try {
     } catch(e) {
         console.log(e.stack);
         }
-});
 
 client.login(process.env.token);
