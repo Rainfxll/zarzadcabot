@@ -51,11 +51,7 @@ client.on ("message", (message) => {
 
 client.on ("guildMemberAdd", member => {  
 
-    var role = member.guild.roles.find ("name", "[RHINO] MEMBER");
-    member.addRole (role);
-    var role = member.guild.roles.find ("name", "╠-● POWIADOMIENIA");
-    member.addRole (role);
-    var role = member.guild.roles.find ("name", "╠-● UŻYTKOWNIK");
+    var role = member.guild.roles.find ("name", "✋ | UŻYTKOWNIK");
     member.addRole (role);
 })
 
