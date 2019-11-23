@@ -65,4 +65,4 @@ client.on("guildMemberAdd", function(member){
     member.guild.channels.find("name", "🌠┃powitalnia").send("(**SYSTEM**) Powitajmy użytkownika o nazwie @"  +  member.user.username )
 });
 
-client.login(process.env.token);
+bot.login(process.env.token);
